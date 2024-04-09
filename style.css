@@ -1,0 +1,553 @@
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    /* Primary */
+    --p01: hsl(243, 87%, 12%);
+    --p02: hsl(238, 22%, 44%);
+
+    /* Accent */
+    --a01: hsl(224, 93%, 58%);
+    --a02: hsl(170, 45%, 43%);
+
+    /* Neutral */
+    --n01: hsl(240, 75%, 98%);
+    --n02: hsl(0, 0%, 75%);
+
+    /* FONTS */
+    --f01: 'Raleway', sans-serif;
+    --f02: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: fit-content;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+h2 {
+    font-family: var(--f01);
+    color: var(--p01);
+    font-size: 2.47rem;
+    line-height: 3.5rem;
+}
+.ph2 {
+    font-family: var(--f02);
+    color: var(--p01);
+    font-weight: 500;
+    font-size: 1.075rem;
+    line-height: 1.6rem;
+}
+hr {
+    display: none;
+}
+
+.cont-Main {
+    max-width: 1440px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 54px 80px;
+    background-image: url('./images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 360% 53%;
+    background-position: center;
+    background-position-y: bottom;
+}
+.cont-Header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-Fylo {
+    width: auto;
+    height: 52px;
+    display: flex;
+    align-items: center;
+}
+.subCont-Header-FeTeSi {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    gap: 58px;
+    font-family: var(--f01);
+    font-weight: 400;
+}
+.cont-Description {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 80px 0;
+}
+.subCont-Description-words {
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding-right: 52px;
+}
+/* h2 GLOBAL
+pH2 GLOBAL */
+.form {
+    width: 100%;
+    height: fit-content;display: flex;
+    gap: 16px;
+}
+.input-email {
+    width: 320px;
+    height: 44px;
+    padding: 0 20px;
+    border: 1px solid var(--p01);
+    border-radius: 4px;
+}
+.primary-button {
+    width: 200px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--a01);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: .05rem;
+}
+.input-email, .primary-button {
+    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.15);
+}
+.subCont-Description-image {
+    width: 100%;
+    height: auto;
+}
+.subCont-Description-image img {
+    width: auto;
+    height: 480px;
+}
+.cont-Description-2 {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 80px 0;
+    gap: 80px;
+}
+.subCont-Description-2-words {
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.subCont-Description-2-words .ph2 {
+    width: 85%;
+}
+.textYArrow {
+    width: 172px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--f02);
+    color: var(--a02);
+    border-bottom: 1px solid var(--a02);
+}
+.arrow-img {
+    width: 1rem;
+    height: 1rem;
+}
+.feedback {
+    width: 356px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px 32px;
+    gap: 16px;
+    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.15);
+}
+.quotes-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.quotes-img img {
+    width: auto;
+    height: 12px;
+}
+.feedback > p{
+    font-family: var(--f02);
+    font-size: .85rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    color: var(--p01);
+}
+.profile {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 8px;
+    font-family: var(--f02);
+}
+.profile-img {
+    width: auto;
+    height: auto;
+    display: grid;
+    place-items: center;
+
+}
+.profile-img img {
+    width: auto;
+    height: 32px;
+    border-radius: 50%;
+}
+.profile-nameYjob {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    color: var(--p01);
+}
+.profile-name {
+    font-size: .75rem;
+    font-weight: 700;
+}
+.profile-job {
+    font-size: .55rem;
+}
+.illus-2 {
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+.illus-2 img {
+    width: 540px;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+.top-foot {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: var(--p02);
+}
+.cont-Email-Register {
+    max-width: 1440px;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 108px 80px;
+}
+.subCont-description-register {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.subCont-description-register h2 {
+    font-size: 2rem;
+    color: white;
+}
+.subCont-description-register p {
+    width: 90%;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: white;
+}
+.form2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    gap: 16px;
+}
+.input-email-2 {
+    width: 408px;
+    height: 48px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px hsla(0, 0%, 0%, 0.15);
+}
+.bottom-foot {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: var(--p01);
+}
+.foot {
+    max-width: 1440px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 108px 80px;
+    color: white;
+    gap: 24px;
+}
+
+.footCont {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-weight: 400;
+}
+.footContLeftSide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footCont p {
+    font-family: var(--f02);
+}
+.aboutUs {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.iconAboutUs {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+}
+.footContMiddleSide {
+    width: 100%;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+}
+/* .footContMiddleSide p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+} */
+.midLeft, .midRight {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footContRightSide {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-left: 120px;
+}
+.iconSocialMedia {
+    width: 32px;
+    height: 32px;
+    border: 1px white solid;
+    border-radius: 50%;
+    display:grid;
+    place-items: center;
+}
+.iconSocialMedia:hover {
+    border: 1px solid var(--p01);
+    cursor: pointer;
+}
+.iconSocialMedia img {
+    width: 16px;
+}
+
+    /* RESPONSIVE VIEW  */
+
+@media (max-width: 420px) {
+    h2 {
+        font-size: 1.6rem;
+        line-height: 2.125rem;
+    }
+    .ph2 {
+        font-size: .9rem;
+        line-height: 1.325rem;
+    }
+    .cont-Main {
+        padding: 24px;
+        padding-bottom: 0;
+        background-image: url('./images/bg-curve-mobile.svg');
+    }
+    .cont-Header {
+        align-items: center;
+    }
+    .logo-Fylo {
+        height: 24px;
+    }
+    .logo-Fylo img {
+        height: 100%;
+    }
+    .subCont-Header-FeTeSi {
+        gap: 24px;
+        font-weight: 500;
+        font-size: .75rem;
+    }
+    .cont-Description {
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: none;
+        padding: 92px 0;
+        gap: 44px;
+    }
+    .subCont-Description-image img {
+        width: 100%;
+        height: auto;
+    }
+    .subCont-Description-words {
+        min-height: 200px;
+        height: fit-content;
+        gap: 28px;
+        padding-right: 0;
+        text-align: center;
+    }
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-email {
+        width: 90%;
+    }
+    .primary-button {
+        width: 90%;
+    }
+    .cont-Description-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: none;
+        padding: 92px 0 80px 0;
+        gap: 80px;
+    }
+    .illus-2 {
+        width: 100%;
+    }
+    .illus-2 img {
+        width: 100%;
+    }
+    .subCont-Description-2-words {
+        min-height: 200px;
+        gap: 20px;
+    }
+    .subCont-Description-2-words h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .subCont-Description-2-words .ph2 {
+        width: 100%;
+        font-size: .88rem;
+        color: var(--p02);
+    }
+    .subCont-Description-2-words :nth-child(4) {
+        place-self: center;
+    }
+    .subCont-Description-2-words :nth-child(5) {
+        place-self: center;
+    }
+    .feedback {
+        width: 17rem;
+        height: fit-content;
+        border-radius: 4px;
+        padding: 20px 24px;
+        gap: 12px;
+    }
+    .feedback > p{
+        font-size: .61rem;
+        line-height: 1.07rem;
+    }
+    .profile-img img {
+        height: 24px;
+    }
+    .profile-name {
+        font-size: .6rem;
+    }
+    .profile-job {
+        font-size: .4rem;
+    }
+    .cont-Email-Register {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        padding: 56px 40px;
+        gap: 24px;
+    }
+    .subCont-description-register {
+        gap: 20px;
+    }
+    .subCont-description-register h2 {
+        font-size: 1.125rem;
+        text-align: center;
+    }
+    .subCont-description-register p {
+        width: 100%;
+        text-align: center;
+        font-size: .9rem;
+    }
+    .form2 {
+        padding-left: 0;
+        gap: 8px;
+        align-items: center;
+    }
+    .input-email-2 {
+        width: 80%;
+        height: 32px;
+        padding: 0 8px;
+        border-radius: 2px;
+    }
+    .foot-button {
+        width: 80%;
+        height: 32px;
+        border-radius: 2px;
+        font-size: .65rem;
+    }
+    .foot {
+        padding: 64px 40px;
+        gap: 40px;
+    }
+    
+    .footCont {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        gap: 60px;
+    }
+    .footContLeftSide {
+        height: fit-content;
+    }
+    .footContMiddleSide {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footContRightSide {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
